@@ -7,7 +7,8 @@
     --ashylines: #201d1b;
     --warmgreen:#011;
     color: whitesmoke;
-    background:  #000;
+    /* background:rgb(1, 10, 1); */
+    background:#000;
     box-sizing: border-box;
     font-family:sans-serif;
 } 
@@ -17,9 +18,9 @@
 
 /* General styles outside media queries */ 
 
-body{
-    /* height: 300vh; */
-}
+/* body{
+     height: 300vh;
+} */
 
 
 .hi {
@@ -51,7 +52,9 @@ body{
 }
 
 
-/* styles outside media quries */
+
+
+/*End of styles outside media queries */
 
 
 /*  MEDIA QUERY 320PX   ////////////////////////////////// */
@@ -511,8 +514,10 @@ body{
     }
 
     .shoot {
-        position: relative;
-        top: -70px;
+        position: absolute;
+        top:30px;
+        margin-left: -1px;
+        /* right: 150px; */
     }
     
 
@@ -537,32 +542,16 @@ body{
         font-size: 12px;
     }
 
-    .icons > i {
-        display: block;
-        margin: 20px 0;
-        border: solid 2px var(--ashylines) ;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 30px;
-        width: 20px;
-        height: 20px;
-
-        }
-
-    .icons {
-        position: relative;
-        top: -60px;
-        transition:all 0.5s linear;
-        border-radius: 30px;
-        font-size: 10px;
-        margin-left: 30px;
-    }
 
     .icons> i:hover {
         transform: translateX(5px);
         color: var(--ashylines);
 
+    }
+    .boxes {
+        position: absolute;
+        top: 230px;
+        left: 20px;
     }
     
 
@@ -574,9 +563,7 @@ body{
         position: absolute;
         top: 750px;
         left:510px;
-        border: solid 13px var(--wavylemon);
-        border-right-color: var(--redwave);
-        border-left-color:yellow;
+        border: solid 18px var(--wavylemon);
         border-radius: 90px;
         opacity: 1;
 
@@ -597,13 +584,13 @@ body{
     .l3 {
 
         width: 30px;
-        height:333 px;
+        height:140px;
         position: absolute;
-        top: 580px;
+        top: 570px;
         left: 630px;
-        border: solid 26px orangered;
+        border: solid 16px orangered;
         border-radius: 80px;
-        transform:rotate(20deg);
+        transform:rotate(15deg);
     }
 
     .l4 {
@@ -619,12 +606,12 @@ body{
     }
 
     .l5 {
-        width: 40px;
-        height: 130px;
+        width: 30px;
+        height: 140px;
         position: absolute;
         top: 655px;
         left: 385px;
-        border: solid 16px var(--wavylemon);
+        border: solid 16px yellow;
         border-radius: 90px;
         opacity: 1;
         transform:rotate(-50deg);
@@ -649,10 +636,10 @@ body{
         top: 485px;
         left: 485px;
         border: solid 16px var(--redwave);
-        border-left-color: var(--wavylemon);
+        /* border-left-color: var(--wavmon); */
         border-radius: 90px;
         opacity: 100%;
-        transform:rotate(-17deg);
+        transform:rotate(-19deg);
 
     }
 
@@ -787,7 +774,9 @@ body{
         border: solid 2px var(--ashylines);
         background: rgb(4, 195, 17);
         text-transform: uppercase;
-        position: relative;
+        position: absolute;
+        top: 300px;
+        left: 108px;
         margin-top: 100px;
         margin-left: 130px;
         display: flex;
@@ -841,6 +830,7 @@ body{
         letter-spacing: 4px;
     }
 
+/* down circle */
 
     .l1 {
         width: 130px;
@@ -848,50 +838,61 @@ body{
         position: absolute;
         top: 330px;
         left: 1070px;
-        border: solid 13px var(--wavylemon);
-        border-left-color: var(--redwave);
-        border-bottom-color: var(--redwave);
-        border-right-color:#ffff00;
+        border: solid 13px #ffff00;
         border-radius: 80px;
     }
 
-    /* .l2{
-        position: absolute;
-        top: 50px;
-        left: 550px;
-        width: 50px;
-        height: 50px;
-        background: yellow;
+/* bottom white */
+    .l2 {
+        width: 20px;
+        /* height: 120px; */
+        height: 170px;
+        position:absolute;
+        /* top: 210px; */
+        top: 280px;
+        left:890px;
+        border: solid 10px #fff;
+        /* transform: rotate(32deg); */
+        transform: rotate(0deg);
+        border-radius: 70px;
         opacity: 1;
-    } */
+
+    }
 
 
+/* left rect */
     .l3 {
         width: 20px;
         height: 120px;
         position:absolute;
         top: 190px;
         left:780px;
-        border: solid 11px orangered;
-        border-top-color: yellow;
+        border: solid 11px var(--wavylemon) ;
         border-right-color: var(--redwave);
-        border-left-color:var(--wavylemon);
+        border-top-color: yellow;
+        border-bottom-color: orangered;
         transform: rotate(32deg);
         border-radius: 70px;
+        
     }
-
+/* top white */
     .l4 {
-        width: 10px;
-        height: 180px;
-        position: absolute;
-        top: 50px;
-        left: 900px;
-        border: solid 6px var(--wavylemon);
-        border-left-color: var(--redwave);
-        border-radius: 20px;
-        transform: rotate(360deg);
+         width: 20px;
+        /* height: 120px; */
+        height: 170px;
+        position:absolute;
+        /* top: 210px; */
+        top: 60px;
+        left:1137px;
+        border: solid 10px #fff;
+        /* transform: rotate(32deg); */ 
+        transform: rotate(0deg);
+        border-radius: 70px;
+        opacity: 1;
+
     }
 
+/* center rect */
     .l5 {
         width: 20px;
         height: 120px;
@@ -899,13 +900,16 @@ body{
         position: absolute;
         top: 190px;
         left: 1009px;
-        border: solid 10px orangered;
-        border-top-color: var(--wavylemon);
-        border-bottom-color: var(--wavylemon);
+        /* border: solid 10px #ff4500; */
+        border: solid 10px var(--wavylemon);
+        border-left-color: var(--redwave);
+        border-top-color: yellow;
+        border-bottom-color: orangered;
         border-radius: 20px;
         transform: rotate(-32deg);
-    }
 
+    }
+/* bottom rectangle  */
     .l6 {
         width: 20px;
         height: 170px;
@@ -913,12 +917,14 @@ body{
         top: 280px;
         left: 895px;
         border: solid 10px var(--wavylemon);
-        border-bottom-color: var(--zimba);
+        border-left-color: var(--redwave);
+        /* border-top-color: var(--wavylemon); */
         border-radius: 80px;
         opacity: 1;
         transform: rotate(0);
     }
     
+/* top circle */
 
     .l7 { 
         width: 130px;
@@ -926,41 +932,44 @@ body{
         position: absolute;
         top: 20px;
         left: 840px;
-        border: solid 13px orangered;
-        border-bottom-color: var(--redwave);
-        border-left-color: var(--redwave);
+        border: solid 13px var(--redwave);
         border-radius: 90px;
+        transform: rotate(140deg);
     }
 
+/* right rect */
     .l8 {
         width: 20px;
         height: 120px;
         position: absolute;
         top: 190px;
         right: 70px;
-        border: solid 11px orangered;
+        border: solid 11px var(--wavylemon);
+        border-left-color: var(--redwave);
         border-top-color: yellow;
-        border-right-color: var(--redwave);
-        border-left-color:var(--wavylemon);
+        border-bottom-color: orangered;
         transform: rotate(33deg);
         border-radius: 70px;
     }
+/* top rect */
 
     .l9{
         width: 20px;
-        height: 170px;
+        height:170px;
         position: absolute;
         top: 60px;
-        right: 185px;
+        right: 195px;
         border: solid 10px var(--wavylemon);
-        border-bottom-color: var(--redwave);
+        /* border-bottom-color: yellow; */
         border-radius: 90px;
     }
+
 /* styles for socials */
+
     .boxes{
         position: relative;
-        top: -350px;
-        left: 80px;
+        top: -210px;
+        left: 110px;
     }
     
     .boxes:hover {
@@ -969,10 +978,9 @@ body{
     }
 
 
-    /* End of media queries */
-
+    
     /* styling for divs */
-
+    
     #styles {
         position:relative;
         top:-413px;
@@ -983,15 +991,17 @@ body{
 
     }
     
-
-
+    
+    
 }
+/* End of media queries */
 
 
 /* START STYLES FOR SIDEBAR */
 
 .nav-menu {
-    background-color: #000;
+    
+    background:rgba(0, 0, 0, 0.975);
     border: solid  0.1px  rgba(255, 255, 255, 0.377);
     border-top: none;
     border-right: none;
@@ -1010,8 +1020,15 @@ body{
     transition: all 0.3s linear;
 }
 
+#check {
+    opacity: 0;
+    /* display: none; */
+}
+
+
 label {
     font-size: 22px;
+    cursor: pointer;
 }
 
 .bars:hover {
@@ -1023,8 +1040,9 @@ label {
 .bars {
     position: fixed;
     top: 40px;
-    right: 20px;
+    right: 50px;
 }
+
 .times:hover {
     cursor: pointer;
     /* font-size: 25px; */
@@ -1035,15 +1053,17 @@ label {
     position: relative;
     top: 10px;
     left: 10px;
+    font-size: 25px;
    
 }
+
 ul li {
     position: relative;
     top: 55px;
     list-style: none;
     margin: 20px 0;
     text-transform: capitalize;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
     letter-spacing: 2px;
     font-weight: 700;
 
@@ -1082,9 +1102,6 @@ li a:hover {
     transition: all 0.3s linear;
 }
 
-#check {
-    display: none;
-}
 
 
 /*END OF STYLES FOR  SIDEBAR */
@@ -1093,8 +1110,7 @@ li a:hover {
 
 
 .boxes div{
-    /* position: relative;
-    top: -300px; */
+
     background:var(--ashylines);
     height: 25px;
     width: 25px;
@@ -1124,10 +1140,10 @@ li a:hover {
 .boxes i {
     /* margin-left: 7px;  */
      margin-top: 5px;
-    color:var(--ashylines);
+    color:#fff;
 }
 .boxes div, i:hover {
-    color: #fff;
+    color: rgb(252, 252, 252);
 }
 
 .boxes-twitter:hover {
